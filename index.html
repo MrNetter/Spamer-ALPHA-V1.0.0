@@ -13,13 +13,13 @@
     <main class="main">
         <section class="section-main">
             <div class="btn-toggle">
-            <img class="img-telegram" src="https://i.pinimg.com/1200x/0d/0d/58/0d0d5807fbb82eddf790a58adb8a9285.jpg" alt="">
-            <img class="img-discord" src="https://i.pinimg.com/1200x/b5/d4/ce/b5d4ce10a744861ffd3314d20d116976.jpg" alt="">
+            <img class="img-telegram none" src="https://i.pinimg.com/1200x/0d/0d/58/0d0d5807fbb82eddf790a58adb8a9285.jpg" alt="">
+            <img class="img-discord none" src="https://i.pinimg.com/1200x/b5/d4/ce/b5d4ce10a744861ffd3314d20d116976.jpg" alt="">
             </div>
             <div class="form-telegram none" action="text-info1">
-                <div class="telegram-main">
+                <form class="telegram-main">
                     <h2 class="text-info1">Телеграм Спамер</h2>
-                    <input class="token-tg" placeholder="Введите токен" type="text" id="token-tg" minlength="46" maxlength="50" required/>
+                    <input class="token-tg" placeholder="Введите токен" type="text" id="token-tg" minlength="46" maxlength="50" required />
                     <p>Укажите токен бота в телеграмме.</p>
                     <br>
                     <input class="chat-id" placeholder="Введите id чата" type="text" id="chat-id" minlength="10" maxlength="10" required />
@@ -28,9 +28,9 @@
                     <input class="message-tg" placeholder="Введите сообщение" type="text" id="message-tg" required />
                     <p>Ваше сообщение, будет отправлено от лица бота.</p>
                     <br>
-                    <button class="submit-tg" onclick="send()">Submit</button>
+                    <button class="submit-tg" onclick="send()">Отправить</button>
                     <p>Нажмите на кнопку для старта/завершения</p>
-                </div>
+                </form>
             </div>
             <form class="form-discord none" action="text-info2">
                 <div class="discord-main">
@@ -44,7 +44,7 @@
                     <input class="message-ds" placeholder="Введите сообщение" type="text" id="message-ds" maxlength="2000" required />
                     <p>Нажмите на кнопку для старта/завершения</p>
                     <br>
-                    <button class="submit-ds" onclick="se">Submit</button>
+                    <button class="submit-ds" onclick="se">Отправить</button>
                     <p>Нажмите на кнопку для старта/завершения</p>
                 </div>
             </form>

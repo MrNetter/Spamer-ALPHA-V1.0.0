@@ -27,9 +27,14 @@ discord.addEventListener("click", () => {
 confirmBtn.addEventListener("click", () => {
     form2.classList.remove("none")
     confirm1.classList.add("none")
+    telegram.classList.remove("none")
+    discord.classList.remove("none")
+
 })
 
 async function send() {
+    form1.preventDefault ();
+
     const token = document.getElementById('token-tg').value.trim();
     const chatId = document.getElementById('chat-id').value.trim();
     const msg = document.getElementById('message-tg').value.trim();
@@ -48,6 +53,5 @@ async function send() {
         console.error(err);
     }
 }
-
 
 
