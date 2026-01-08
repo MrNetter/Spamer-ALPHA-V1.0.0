@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" rel="stylesheet">
+        <title>SpamBot Tg&Ds</title>
+</head>
+<body>
+    <main class="main">
+        <section class="section-main">
+            <div class="btn-toggle">
+            <img class="img-telegram" src="https://i.pinimg.com/1200x/0d/0d/58/0d0d5807fbb82eddf790a58adb8a9285.jpg" alt="">
+            <img class="img-discord" src="https://i.pinimg.com/1200x/b5/d4/ce/b5d4ce10a744861ffd3314d20d116976.jpg" alt="">
+            </div>
+            <div class="form-telegram none" action="text-info1">
+                <div class="telegram-main">
+                    <h2 class="text-info1">Телеграм Спамер</h2>
+                    <input class="token-tg" placeholder="Введите токен" type="text" id="token-tg" minlength="46" maxlength="50" required/>
+                    <p>Укажите токен бота в телеграмме.</p>
+                    <br>
+                    <input class="chat-id" placeholder="Введите id чата" type="text" id="chat-id" minlength="10" maxlength="10" required />
+                    <p>id чата в котором бот находитесь.</p>
+                    <br>
+                    <input class="message-tg" placeholder="Введите сообщение" type="text" id="message-tg" required />
+                    <p>Ваше сообщение, будет отправлено от лица бота.</p>
+                    <br>
+                    <button class="submit-tg" onclick="send()">Submit</button>
+                    <p>Нажмите на кнопку для старта/завершения</p>
+                </div>
+            </div>
+            <form class="form-discord none" action="text-info2">
+                <div class="discord-main">
+                    <h2 class="text-info2">Дискорд Спамер</h2>
+                    <input class="token-ds" placeholder="Введите токен" type="text" id="token-ds" minlength="118" maxlength="130" required />
+                    <p>Укажите токен бота в дискорде.</p>
+                    <br>
+                    <input class="channel-id" placeholder="Введите id канала" type="text" id="channel-id" minlength="19" maxlength="25" required />
+                    <p>Укажите id канала в дискорд сервере.</p>
+                    <br>
+                    <input class="message-ds" placeholder="Введите сообщение" type="text" id="message-ds" maxlength="2000" required />
+                    <p>Нажмите на кнопку для старта/завершения</p>
+                    <br>
+                    <button class="submit-ds" onclick="se">Submit</button>
+                    <p>Нажмите на кнопку для старта/завершения</p>
+                </div>
+            </form>
+            <div class="confirm">
+                <h3>ПОЛЬЗОВАТЕЛЬСКОЕ СОГЛАШЕНИЕ</h3>
+                <p>
+                    Создатель приложения не несёт ответственности за ваши действия. <br>
+                    Нажимая кнопку «Согласиться», вы подтверждаете, что ознакомились <br>
+                    и соглашаетесь с условиями пользовательского соглашения.
+                </p>
+                <button class="comfirm-btn">Согласиться</button>
+                <p>Info V1.0.0 Status: ALPHA</p>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
