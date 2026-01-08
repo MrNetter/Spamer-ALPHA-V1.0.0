@@ -16,18 +16,6 @@ body {
 .img-telegram:hover {
     transform: scale(1.1);
 }
-
-.img-discord {
-    height: 40px;
-    width: 40px;
-    border-radius: 8px;
-    transition: transform 0.6s ease-in-out;
-}
-
-.img-discord:hover {
-    transform: scale(1.1);
-}
-
 main {
     height: 100vh;
     margin: 0;
@@ -44,29 +32,11 @@ main {
     padding: 20px;
 }
 
-.discord-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 20px;
-}
-
 .form-telegram {
     height: auto;
     min-width: 300px;
     background: rgb(42, 60, 68);
 
-}
-
-.form-discord {
-    height: auto;
-    min-width: 300px;
-    background: rgb(51, 73, 145);
-}
-
-.form-discord, input {
-    border: 2px solid rgb(0, 81, 255);
-    border-radius: 4px;
 }
 
 input {
@@ -93,13 +63,6 @@ button {
     background: rgb(57, 120, 192);
     color: white;
     
-}
-
-.submit-ds {
-    border: 2px solid rgb(0, 81, 255);
-    border-radius: 4px;
-    background: rgb(57, 120, 192);
-    color: white;
 }
 
 .btn-toggle {
